@@ -1,0 +1,37 @@
+export const COLOR_FIELDS = [
+  "primary",
+  "primary_foreground",
+  "secondary",
+  "secondary_foreground",
+  "accent",
+  "accent_foreground",
+  "background",
+  "card",
+  "card_foreground",
+  "popover",
+  "popover_foreground",
+  "muted",
+  "muted_foreground",
+  "destructive",
+  "destructive_foreground",
+  "border",
+  "input",
+  "ring",
+  "chart_1",
+  "chart_2",
+  "chart_3",
+  "chart_4",
+  "chart_5",
+  "sidebar",
+  "sidebar_foreground",
+  "sidebar_primary",
+  "sidebar_primary_foreground",
+  "sidebar_accent",
+  "sidebar_accent_foreground",
+  "sidebar_border",
+  "sidebar_ring",
+] as const;
+
+export const SPACING_FIELDS = ["spacing", "radius"] as const;
+
+export const ALL_THEME_FIELDS = [...COLOR_FIELDS, ...SPACING_FIELDS] as const;

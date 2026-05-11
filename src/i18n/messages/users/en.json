@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "home": "Home",
+    "courses": "Courses",
+    "announcements": "Announcements",
+    "blogs": "Blogs",
+    "faq": "FAQ"
+  },
+  "userMenu": {
+    "label": "User menu",
+    "profile": "Profile",
+    "settings": "Settings",
+    "signOut": "Sign out"
+  },
+  "schedule": {
+    "title": "Today's Lectures",
+    "downloadPdf": "Download Schedule PDF",
+    "downloadPdfAriaLabel": "Download the full weekly schedule as a PDF",
+    "cardListLabel": "Today's lecture cards",
+    "status": {
+      "current": "In Progress",
+      "upcoming": "Upcoming",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "courses": {
+    "title": "Courses",
+    "seeAll": "See All Courses",
+    "seeAllAriaLabel": "See all enrolled courses",
+    "viewLectures": "View Lectures",
+    "viewLecturesAriaLabel": "View lectures for",
+    "gridLabel": "Enrolled courses",
+    "empty": "No courses enrolled yet."
+  }
+}

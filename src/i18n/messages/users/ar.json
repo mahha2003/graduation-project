@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "courses": "المقررات",
+    "announcements": "الإعلانات",
+    "blogs": "المدونات",
+    "faq": "الأسئلة الشائعة"
+  },
+  "userMenu": {
+    "label": "قائمة المستخدم",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "signOut": "تسجيل الخروج"
+  },
+  "schedule": {
+    "title": "محاضرات اليوم",
+    "downloadPdf": "تحميل جدول PDF",
+    "downloadPdfAriaLabel": "تحميل الجدول الأسبوعي الكامل كملف PDF",
+    "cardListLabel": "بطاقات محاضرات اليوم",
+    "status": {
+      "current": "جارية الآن",
+      "upcoming": "قادمة",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة"
+    }
+  },
+  "courses": {
+    "title": "المقررات",
+    "seeAll": "عرض جميع المقررات",
+    "seeAllAriaLabel": "عرض جميع المقررات المسجّلة",
+    "viewLectures": "عرض المحاضرات",
+    "viewLecturesAriaLabel": "عرض محاضرات مقرر",
+    "gridLabel": "المقررات المسجّلة",
+    "empty": "لا توجد مقررات مسجّلة بعد."
+  }
+}

@@ -32,5 +32,36 @@
     "viewLecturesAriaLabel": "عرض محاضرات مقرر",
     "gridLabel": "المقررات المسجّلة",
     "empty": "لا توجد مقررات مسجّلة بعد."
+  },
+
+  "announcements": {
+    "title": "الإعلانات",
+    "seeAll": "عرض الكل",
+    "empty": "لا توجد إعلانات حالياً",
+
+    "regularTitle": "إشعار جامعي",
+    "regularDescription": "يرجى متابعة التحديثات الأكاديمية بشكل دوري.",
+
+    "importantTitle": "تنبيه مهم للطلاب",
+    "importantDescription": "يرجى التأكد من تسجيل المواد قبل انتهاء الفترة.",
+
+    "emergencyTitle": "إشعار عاجل",
+    "emergencyDescription": "على الطالب أحمد علي مراجعة مكتب العميد بالسرعة القصوى.",
+
+    "categories": {
+      "regular": "عامة",
+      "important": " مهم",
+      "emergency": "عاجل"
+    }
+  },
+  "featuredNews": {
+    "title": "آخر الأخبار",
+    "readMore": "اقرأ المزيد",
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة",
+    "empty": "لا توجد أسئلة حالياً"
   }
 }

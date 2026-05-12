@@ -41,10 +41,9 @@ export function Navbar({ notificationCount = 0, user }: NavbarProps) {
             <Image
               src="/logo.png"
               alt="logo"
-              width={28}
-              height={28}
-              // هذا السطر هو الأهم لحل مشكلة الـ Aspect Ratio
-              style={{ width: "auto", height: "auto" }}
+              width={30}
+              height={30}
+              // style={{ width: "auto", height: "auto" }}
               className="object-contain"
             />
 

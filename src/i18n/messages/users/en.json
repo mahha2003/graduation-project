@@ -32,5 +32,38 @@
     "viewLecturesAriaLabel": "View lectures for",
     "gridLabel": "Enrolled courses",
     "empty": "No courses enrolled yet."
+  },
+
+  "announcements": {
+    "title": "Announcements",
+    "seeAll": "See All",
+    "empty": "No announcements available currently",
+
+    "regularTitle": "University Notice",
+    "regularDescription": "Please follow academic updates on a regular basis.",
+
+    "importantTitle": "Important Student Alert",
+    "importantDescription": "Please ensure course registration is completed before the deadline.",
+
+    "emergencyTitle": "Urgent Notice",
+    "emergencyDescription": "Student Ahmed Ali must report to the Dean's office as soon as possible.",
+
+    "categories": {
+      "regular": "Regular",
+      "important": "Important",
+      "emergency": "Urgent"
+    }
+  },
+
+  "featuredNews": {
+    "title": "What's New",
+    "readMore": "Read More",
+    "previous": "Previous",
+    "next": "Next"
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "empty": "No questions available"
   }
 }

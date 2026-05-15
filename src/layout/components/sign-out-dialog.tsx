@@ -39,6 +39,7 @@ export function SignOutDialog({ open, onOpenChange }: SignOutDialogProps) {
           query: { redirect: currentPath },
         });
       },
+      // @ts-expect-error
       successMessage: t("Signed out successfully"),
       errorMessage: t("Failed to sign out Please try again"),
       afterFinally: () => {

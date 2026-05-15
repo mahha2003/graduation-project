@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import { useTranslations } from "next-intl";
+import { featuredItems } from "./mock-data";
 
 interface FeaturedNews {
   id: string;
@@ -17,8 +18,10 @@ interface Props {
   items: FeaturedNews[];
 }
 
-export default function FeaturedNewsSection({ items }: Props) {
-  const t = useTranslations("featuredNews");
+const items = featuredItems;
+
+export default function Blogs() {
+  const t = useTranslations("blogs");
 
   const [activeIndex, setActiveIndex] = useState(0);
 

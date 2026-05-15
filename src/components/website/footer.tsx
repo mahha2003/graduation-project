@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+
+// import Link from "next/link";
 // import { LanguageSwitcher } from "./language-switcher";
 import { Facebook, Instagram, Linkedin, Send } from "lucide-react";
 import { useLocale } from "next-intl";
+
+import { Link } from "@/i18n/routing";
 
 export function Footer() {
   const locale = useLocale();
@@ -17,9 +20,6 @@ export function Footer() {
     announcements: isRtl ? "الإعلانات" : "Announcements",
     faq: isRtl ? "الأسئلة الشائعة" : "FAQ",
     blogs: isRtl ? "المدونة" : "Blogs",
-    support: isRtl ? "الدعم" : "Support",
-    policies: isRtl ? "السياسات" : "Policies",
-    privacy: isRtl ? "الخصوصية" : "Privacy",
     rights: isRtl ? "جميع الحقوق محفوظة." : "All rights reserved.",
     uni: isRtl ? "الجامعة العالمية" : "Global University",
   };
@@ -86,34 +86,33 @@ export function Footer() {
             </Link>
           </div>
 
-          {/* 🟢 LEFT/RIGHT: Navigation Links (يتقلب حسب اللغة) */}
           <div className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm font-medium">
             <Link
-              href="/Home"
+              href="/website"
               className="text-[#003C8A] transition-opacity hover:opacity-70 dark:text-blue-200"
             >
               {links.home}
             </Link>
             <Link
-              href="/Courses"
+              href="/website/courses"
               className="text-[#003C8A] transition-opacity hover:opacity-70 dark:text-blue-200"
             >
               {links.courses}
             </Link>
             <Link
-              href="/Announcements"
+              href="/announcements"
               className="text-[#003C8A] transition-opacity hover:opacity-70 dark:text-blue-200"
             >
               {links.announcements}
             </Link>
             <Link
-              href="/FAQ"
+              href="/faq"
               className="text-[#003C8A] transition-opacity hover:opacity-70 dark:text-blue-200"
             >
               {links.faq}
             </Link>
             <Link
-              href="/Blogs"
+              href="/blogs"
               className="text-[#003C8A] transition-opacity hover:opacity-70 dark:text-blue-200"
             >
               {links.blogs}
@@ -147,9 +146,11 @@ export function Footer() {
           </div>
 
           <div className="flex flex-1 flex-col gap-2 text-right text-[10px] font-bold text-[#003C8A] dark:text-blue-200">
-            <Link href="/support">{links.support}</Link>
-            <Link href="/policies">{links.policies}</Link>
-            <Link href="/privacy">{links.privacy}</Link>
+            <Link href="/">{links.home}</Link>
+            <Link href="/announcements">{links.announcements}</Link>
+            <Link href="/blogs">{links.blogs}</Link>
+            <Link href="/website/courses">{links.courses}</Link>
+            <Link href="/faq">{links.faq}</Link>
           </div>
         </div>
 

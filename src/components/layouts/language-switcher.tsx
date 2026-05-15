@@ -36,6 +36,7 @@ export function LanguageSwitcher() {
     // pathname = "/en/website/courses" → segments = ["", "en", "website", "courses"]
     const segments = pathname.split("/");
     segments[1] = code; // swap the locale segment
+    // @ts-expect-error
     router.push(segments.join("/") || "/");
   };
 

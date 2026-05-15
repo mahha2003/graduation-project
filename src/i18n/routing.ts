@@ -64,6 +64,23 @@ export const routing = defineRouting({
       en: "/lectures-schedule",
       ar: "/lectures-schedule",
     },
+    "/blogs": {
+      en: "/blogs",
+      ar: "/المدونة",
+    },
+
+    "/faq": {
+      en: "/faq",
+      ar: "/الاسئلة-الشائعة",
+    },
+    "/website": {
+      en: "/Home",
+      ar: "/الصفحةالرئيسية",
+    },
+    "/website/courses": {
+      en: "/website/courses",
+      ar: "/website/المقررات",
+    },
   },
 });
 

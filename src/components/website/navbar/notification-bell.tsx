@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { Bell } from "lucide-react"; // تأكدي من تثبيت lucide-react
 
-interface NotificationBellProps {
+export interface NotificationBellProps {
   count?: number;
   className?: string;
 }

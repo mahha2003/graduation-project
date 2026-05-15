@@ -22,9 +22,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { LanguageSwitcher } from "./language-switcher";
+import { LanguageSwitcher } from "../../layouts/language-switcher";
 import { NavLinks } from "./nav-links";
-import { ThemeToggle } from "./theme-toggle";
+import { ThemeToggle } from "@/components/layouts/theme-toggle";
+// import { NavLinks } from "../website/navbar/nav-links";
+// import { ThemeToggle } from "./theme-toggle";
 
 /** Inline logo SVG — same three-arc spiral used in the main Navbar */
 function DrawerLogo() {

@@ -21,9 +21,9 @@ export type { NotificationBellProps } from "./notification-bell";
 
 export { MobileMenu } from "./mobile-menu";
 
-export { ThemeToggle } from "./theme-toggle";
+export { ThemeToggle } from "../../layouts/theme-toggle";
 
-export { LanguageSwitcher } from "./language-switcher";
+export { LanguageSwitcher } from "../../layouts/language-switcher";
 
 export { UserMenu } from "./user-menu";
 export type { UserMenuProps } from "./user-menu";

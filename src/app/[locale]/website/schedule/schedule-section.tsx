@@ -14,7 +14,8 @@ import { useTranslations } from "next-intl";
 
 import type { Lecture, SchedulePdfMeta } from "@/types/dashboard";
 
-import { LectureCard } from "./lecture-card";
+import { LectureCard } from "./schedule-card";
+import { schedulePdf, todayLectures } from "./mock-dashboard";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -48,11 +49,10 @@ function DownloadPdfButton({ href, filename }: SchedulePdfMeta) {
 
 // ─── Main section ─────────────────────────────────────────────────────────────
 
-export function LecturesSection({
-  lectures,
-  schedulePdf,
-  dateLabel,
-}: LecturesSectionProps) {
+const pdf = schedulePdf;
+const lectures = todayLectures;
+
+export function LecturesSection() {
   const t = useTranslations("schedule");
 
   return (
@@ -67,17 +67,17 @@ export function LecturesSection({
             {t("title")}
           </h2>
 
-          {dateLabel && (
+          {/* {dateLabel && (
             <div className="flex items-center gap-1.5 text-xs font-medium text-slate-400 dark:text-slate-500">
               <CalendarDays className="h-3.5 w-3.5" strokeWidth={2} />
               <span>{dateLabel}</span>
             </div>
-          )}
+          )} */}
         </div>
 
         <DownloadPdfButton
-          href={schedulePdf.href}
-          filename={schedulePdf.filename}
+          href={pdf.href}
+          filename={pdf.filename}
         />
       </div>
 

@@ -2,19 +2,36 @@
 
 import { useTranslations } from "next-intl";
 
+import { Announcement } from "../../../app/[locale]/website/announcements/types";
 import AnnouncementCard from "./announcement-card";
-import { Announcement } from "./types";
 
-interface Props {
-  announcements: Announcement[];
-  loading?: boolean;
-}
+const announcements: Announcement[] = [
+  {
+    id: "1",
+    title: "regularTitle",
+    description: "regularDescription",
+    category: "regular",
+    createdAt: "2 hours ago",
+  },
+  {
+    id: "2",
+    title: "importantTitle",
+    description: "importantDescription",
+    category: "important",
+    createdAt: "Yesterday",
+  },
+  {
+    id: "3",
+    title: "emergencyTitle",
+    description: "emergencyDescription",
+    category: "emergency",
+    createdAt: "Just now",
+  },
+] as const;
 
-export default function AnnouncementsSection({
-  announcements,
-  loading,
-}: Props) {
+export default function AnnouncementsSection() {
   const t = useTranslations("announcements");
+  const loading = false; // Set to true to show loading state (implement here)
 
   if (loading) {
     return (

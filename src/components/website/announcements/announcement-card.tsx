@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 
-import { Announcement } from "./types";
+import { Announcement } from "../../../app/[locale]/website/announcements/types";
 
 interface Props {
   item: Announcement;
@@ -31,8 +31,7 @@ const categoryStyles = {
 export default function AnnouncementCard({ item }: Props) {
   const t = useTranslations("announcements");
 
-  const categoryClass =
-    categoryStyles[item.category as keyof typeof categoryStyles];
+  const categoryClass = categoryStyles[item.category];
 
   return (
     <div

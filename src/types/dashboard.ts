@@ -57,6 +57,7 @@ export interface Course {
   progress: number;
   /** Route to navigate to when "View Lectures" is clicked */
   lecturesHref: string;
+  term: string;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -69,4 +70,3 @@ export interface SchedulePdfMeta {
   /** Suggested filename the browser will use */
   filename: string;
 }
-

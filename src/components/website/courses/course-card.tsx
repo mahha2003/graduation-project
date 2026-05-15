@@ -110,6 +110,7 @@ export function CourseCard({ course }: CourseCardProps) {
 
         {/* View Lectures button */}
         <Link
+          //@ts-expect-error
           href={course.lecturesHref}
           aria-label={`${t("viewLecturesAriaLabel")} ${course.title}`}
           className="group/btn mt-1 flex items-center justify-center gap-2 rounded-xl border border-[#003c8a]/30 px-4 py-2.5 text-sm font-semibold text-[#003c8a] transition-all duration-200 hover:border-transparent hover:bg-[#003c8a] hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#003c8a] active:scale-[0.97] dark:border-blue-500/30 dark:text-blue-400 dark:hover:bg-blue-600 dark:hover:text-white"

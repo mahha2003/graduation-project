@@ -26,12 +26,22 @@
   },
   "courses": {
     "title": "المقررات",
+    "coursecount": "مقررات",
     "seeAll": "عرض جميع المقررات",
     "seeAllAriaLabel": "عرض جميع المقررات المسجّلة",
     "viewLectures": "عرض المحاضرات",
     "viewLecturesAriaLabel": "عرض محاضرات مقرر",
     "gridLabel": "المقررات المسجّلة",
-    "empty": "لا توجد مقررات مسجّلة بعد."
+    "empty": "لا توجد مقررات مسجّلة بعد.",
+    "searchPlaceholder": "ابحث عن مقرر...",
+    "all": "الكل",
+    "firstTerm": "الفصل الأول",
+    "secondTerm": "الفصل الثاني",
+    "noResults": "لا يوجد نتائج 😢",
+    "showing": "عرض",
+    "showall": "عرض الكل ",
+    "showless": "عرض أقل",
+    "backbutton": "رجوع"
   },
 
   "announcements": {
@@ -54,7 +64,7 @@
       "emergency": "عاجل"
     }
   },
-  "featuredNews": {
+  "blogs": {
     "title": "آخر الأخبار",
     "readMore": "اقرأ المزيد",
     "previous": "السابق",

@@ -26,12 +26,22 @@
   },
   "courses": {
     "title": "Courses",
+    "coursecount": "courses",
     "seeAll": "See All Courses",
     "seeAllAriaLabel": "See all enrolled courses",
     "viewLectures": "View Lectures",
     "viewLecturesAriaLabel": "View lectures for",
     "gridLabel": "Enrolled courses",
-    "empty": "No courses enrolled yet."
+    "empty": "No courses enrolled yet.",
+    "searchPlaceholder": "Search courses...",
+    "all": "All",
+    "firstTerm": "First Term",
+    "secondTerm": "Second Term",
+    "showing": "Showing",
+    "noResults": "No courses found 😢",
+    "showall": "Show All",
+    "showless": "Show Less",
+    "backbutton": "Back"
   },
 
   "announcements": {
@@ -55,7 +65,7 @@
     }
   },
 
-  "featuredNews": {
+  "blogs": {
     "title": "What's New",
     "readMore": "Read More",
     "previous": "Previous",

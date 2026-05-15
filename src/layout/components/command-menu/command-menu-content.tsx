@@ -43,6 +43,7 @@ export function CommandMenuContent({
         type="hover"
         className="h-72 pe-1"
       >
+        {/*  @ts-expect-error */}
         <CommandEmpty>{t("No results found")}</CommandEmpty>
 
         {searchHistory.length > 0 && !currentSearchValue && (

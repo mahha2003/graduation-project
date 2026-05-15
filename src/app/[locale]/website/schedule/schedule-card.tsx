@@ -21,14 +21,15 @@ import type { Lecture, LectureStatus } from "@/types/dashboard";
 
 // ─── Status → translation key map ────────────────────────────────────────────
 // Keys are relative to the "schedule" namespace (schedule.json → schedule.status.*)
-
-const STATUS_KEY: Record<LectureStatus, string> = {
+const STATUS_KEY: Record<
+  LectureStatus,
+  "status.current" | "status.upcoming" | "status.completed" | "status.cancelled"
+> = {
   current: "status.current",
   upcoming: "status.upcoming",
   completed: "status.completed",
   cancelled: "status.cancelled",
 };
-
 // ─── Per-status Tailwind class sets ──────────────────────────────────────────
 
 const statusStyles: Record<

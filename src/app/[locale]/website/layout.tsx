@@ -1,6 +1,7 @@
 // src/app/[locale]/website/layout.tsx
-import { Footer } from "@/components/layouts/footer";
-import { Navbar } from "@/components/layouts/index";
+import { Footer } from "react-day-picker";
+
+import { Navbar } from "@/components/website/navbar/index";
 
 interface WebsiteLayoutProps {
   children: React.ReactNode;

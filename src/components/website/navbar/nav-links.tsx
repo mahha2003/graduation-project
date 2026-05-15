@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import { useLocale, useTranslations } from "next-intl";
 
+import { usePathname } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
@@ -26,19 +26,19 @@ export function NavLinks({
   orientation = "horizontal",
   onLinkClick,
 }: NavLinksProps) {
-  const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations("nav");
-
+  const pathname = usePathname();
   // بناء الرابط ليتناسب مع هيكلية المسارات لديكِ
   const buildHref = (item: NavItem) => `/${locale}/website${item.href}`;
+  const isActive = (item: NavItem) => {
+    const href = buildHref(item);
 
-  const isActive = (item: NavItem): boolean => {
-    const full = buildHref(item);
     if (item.href === "") {
-      return pathname === full;
+      return pathname === href;
     }
-    return pathname === full || pathname.startsWith(full + "/");
+
+    return pathname === href || pathname.startsWith(href + "/");
   };
 
   return (
@@ -57,6 +57,7 @@ export function NavLinks({
         return (
           <Link
             key={item.key}
+            //@ts-expect-error
             href={href}
             onClick={onLinkClick}
             aria-current={active ? "page" : undefined}

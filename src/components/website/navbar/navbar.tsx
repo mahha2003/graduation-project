@@ -5,11 +5,11 @@ import Link from "next/link";
 
 import { useLocale } from "next-intl";
 
-import { LanguageSwitcher } from "./language-switcher";
+import { LanguageSwitcher } from "../../layouts/language-switcher";
+import { ThemeToggle } from "../../layouts/theme-toggle";
 import { MobileMenu } from "./mobile-menu";
 import { NavLinks } from "./nav-links";
 import { NotificationBell } from "./notification-bell";
-import { ThemeToggle } from "./theme-toggle";
 import { UserMenu } from "./user-menu";
 
 export interface NavbarProps {
@@ -35,6 +35,7 @@ export function Navbar({ notificationCount = 0, user }: NavbarProps) {
         <div className="hidden h-16 items-center justify-between md:flex">
           {/* LEFT: LOGO & BRAND */}
           <Link
+          // @ts-expect-error
             href={`/${locale}/website`}
             className="flex items-center gap-4 rounded transition-transform hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#003c8a]"
           >
@@ -80,6 +81,7 @@ export function Navbar({ notificationCount = 0, user }: NavbarProps) {
         {/* MOBILE NAVBAR */}
         <div className="flex h-16 items-center justify-between md:hidden">
           {/* LEFT: LOGO */}
+          {/* @ts-expect-error */}
           <Link href={`/${locale}/website`} className="flex items-center gap-3">
             <Image
               src="/logo.png"

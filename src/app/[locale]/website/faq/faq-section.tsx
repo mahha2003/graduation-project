@@ -18,7 +18,27 @@ interface FAQSectionProps {
   image: string;
 }
 
-export default function FAQSection({ items, image }: FAQSectionProps) {
+const items = [
+  {
+    id: "1",
+    question: "How do I register for courses?",
+    answer:
+      "Course registration opens before the semester starts. opens before the semester starts.opens before the semester starts.",
+  },
+  {
+    id: "2",
+    question: "Where can I download my transcript?",
+    answer: "You can download it from the student portal.",
+  },
+  {
+    id: "3",
+    question: "How can I contact support?",
+    answer: "You can contact support through the dashboard.",
+  },
+];
+
+const image = "/images/faqimg.jpg";
+export default function FAQSection() {
   const t = useTranslations("faq");
 
   return (
